@@ -72,7 +72,7 @@ const OrderRow = props => {
 
     const contentToggleIcon = <Icon src={contentToggleIconSrc} size={24} />;
 
-    const collapsedImageGalleryElement = isOpen ? null : <CollapsedImageGallery items={imagesData} />;
+    // const collapsedImageGalleryElement = isOpen ? null : <CollapsedImageGallery items={imagesData} />;
 
     const orderDetails = loading ? null : <OrderDetails orderData={order} imagesData={imagesData} />;
 
@@ -98,7 +98,7 @@ const OrderRow = props => {
                     <Price currencyCode={currency} value={orderTotal} />
                 </div>
             </div>
-            <div className={classes.orderItemsContainer}>{collapsedImageGalleryElement}</div>
+            {/* <div className={classes.orderItemsContainer}>{collapsedImageGalleryElement}</div> */}
             <div className={classes.orderStatusContainer}>
                 <span className={classes.orderStatusBadge}>{derivedStatus}</span>
                 <OrderProgressBar status={derivedStatus} />
