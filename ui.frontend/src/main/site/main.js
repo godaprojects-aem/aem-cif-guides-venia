@@ -11,5 +11,6 @@
  *    governing permissions and limitations under the License.
  *
  ******************************************************************************/
+ import 'bootstrap/dist/js/bootstrap.bundle'
 import '../components';
 import './main.scss';
